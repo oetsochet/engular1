@@ -1,0 +1,21 @@
+<!-- <div class="row" id="navbar" [ngClass]="{ 'bg-dark':mode==='light','bg-#f2272f':mode==='dark'}">-->
+<div class="row" id="navbar">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+        <nav class="navbar-menu" id="navbar-menu">
+            <!-- <a routerLink="/komsan" routerLinkActive="active" [ngClass]="{ 'text-white':mode==='light','text-dark':mode==='dark'}"  >កំសាន្ត</a> -->
+            <a routerLink="/home"  routerLinkActive="active" ><i class="fa fa-home"></i></a>
+            <a routerLink="/komsan" routerLinkActive="active" >កំសាន្ត</a>
+            <a routerLink="/technology" routerLinkActive="active" >បច្ចេកវិទ្យា</a>
+            <a routerLink="/songkom" routerLinkActive="active">ជីវិត និង សង្គម</a>
+            <a routerLink="/sport" routerLinkActive="active" >កីឡា</a>
+            <a routerLink="/healdth" routerLinkActive="active" >សុខភាព</a>
+            <a routerLink="/more" routerLinkActive="active" >More</a> 
+        </nav>
+        <!-- <button type="button" (click)="onChengeMoed()" [ngClass]="{ 'text-white':mode==='light','text-dark':mode==='dark'}">Mode</button> -->
+        <a (click)="fabars()"  id="fabar"><i class="fa fa-bars" ></i></a>
+    </div>
+    <div class="col-md-1"></div>
+</div>
+
+<link href='https://fonts.googleapis.com/css?family=Bayon|Francois+One' rel='stylesheet' type='text/css'>

@@ -1,0 +1,46 @@
+#navbar{
+    height:auto;
+    background-color:#f2272f;
+    padding: 0px;
+
+}
+.navbar-menu{
+    width: 100%;
+}
+.navbar-menu a{
+    height:75px;
+    font-size: 50px;
+    font-family:'Francois One','Bayon'; 
+    margin-left: 2%;
+    text-decoration: none;
+    color: black;
+    padding: 0px 10px 0px 10px;
+
+}
+#fabar{
+    display: none;
+    font-size: 50px;
+    margin-left: 3%;
+}
+.navbar-menu a:hover{
+    color:white;
+    text-shadow: 0px 0px 5px white;
+}
+.navbar-menu a.active{
+    color:white;
+    text-shadow: 0px 0px 5px white;
+}
+@media only screen and (max-width: 600px) {
+        #fabar{
+            display:unset;
+        }
+        .navbar-menu{
+            display: none;
+        }
+    }
+
+
+
+
+
+    

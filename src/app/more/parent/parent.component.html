@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-md-6" id="parant">
+        <input type="text">
+        <input type="text"  (ngModel)="data"   name="data" placeholder="input to pass data to child !">
+        <input type="button" value="passData" (click)="onSend(data)"  >
+    </div>
+    <div class="col-md-6" id="child">
+       <!-- <app-child></app-child> -->
+    </div>
+</div>

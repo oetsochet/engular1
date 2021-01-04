@@ -1,0 +1,23 @@
+
+  <div class="row" style="height: 100px;">
+    <div class="col-md-12"></div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <app-navbar></app-navbar>
+    </div>
+  </div>
+
+
+
+
+
+<div  [ngClass]="{ 'bg-dark':mode==='light','bg-#f2272f':mode==='dark'}"> 
+  <router-outlet></router-outlet>
+  <!-- <button type="button" (click)="onChengeMoed()" [ngClass]="{ 'text-white':mode==='light','text-dark':mode==='dark'}">Mode</button> -->
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <app-footer></app-footer>
+  </div>
+</div>

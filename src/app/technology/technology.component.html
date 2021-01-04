@@ -1,0 +1,18 @@
+
+<div class="row" >
+    <div class="col-md-1"></div>
+    <div class="col-md-10" >
+      <div class="row" id="detail">
+          <div class="col-md-2" *ngFor=" let detailtechno of detailtechno; let itechno = index " id="col-detail">
+            <a [routerLink]="['/detailtechno/',itechno]" class="link" >
+              <img src="{{detailtechno.urltechno}}" width="100%" alt="">
+              <nav class="title">
+                <p> {{detailtechno.titletechno}}</p>
+              </nav>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    
+</div>

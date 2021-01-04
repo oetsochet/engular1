@@ -1,0 +1,8 @@
+#parant{
+    width: 100%;
+    background-color: rgb(94, 82, 167);
+}
+#child{
+    width: 100%;
+    background-color: rgb(202, 55, 55);
+}

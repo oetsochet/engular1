@@ -1,0 +1,19 @@
+
+
+<div class="row" >
+    <div class="col-md-1"></div>
+    <div class="col-md-10" >
+      <div class="row" id="detail">
+          <div class="col-md-2" *ngFor=" let detail of details; let i=index " id="col-detail">
+            <a [routerLink]="['/detail/',i]" class="link" >
+              <img src="{{detail.url}}" width="100%" alt="">
+              <nav class="title">
+                <p> {{detail.title}}</p>
+              </nav>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    
+</div>

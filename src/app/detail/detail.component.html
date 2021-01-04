@@ -1,0 +1,50 @@
+<div class="row" class="container">
+    <div class="col-md-1"></div>
+    <div class="col-md-8" id="detail">
+        <div class="row" style="padding-left: 10px;">
+            <div class="col-md-12" class="sponser"><a href="">នាំមកជូនដោយ</a></div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="title">{{data.title}}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">a</div>
+            <div class="col-md-6"></div>
+            <div class="col-md-3">sa</div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="sort-detail">ចន្លោះមិនឃើញ <input type="checkbox"> </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="detail">{{data.detial}}k</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img src="{{data.url}}" width="100%" alt="">
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-md-12">
+                <div class="row" style="padding: 10px 10px 10px 10px;">
+                    <div class="col-md-4" *ngFor=" let detail of details; let i=index " id="col_detail">
+                        <a [routerLink]="['/detail/',i]" class="link">
+                            <img src="{{detail.url}}" width="100%" alt="">
+                            <nav class="title_title">
+                                <p> {{detail.title}}</p>
+                            </nav>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-1"></div>
+</div>

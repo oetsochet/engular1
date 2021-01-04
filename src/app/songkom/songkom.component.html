@@ -1,0 +1,18 @@
+
+<div class="row" >
+    <div class="col-md-1"></div>
+    <div class="col-md-10" >
+      <div class="row" id="detail">
+          <div class="col-md-2" *ngFor=" let detailsongkom of detailsongkom; let isongkom = index " id="col-detail">
+            <a [routerLink]="['/detailsongkom/',isongkom]" class="link" >
+              <img src="{{detailsongkom.urlsongkom}}" width="100%" alt="">
+              <nav class="title">
+                <p> {{detailsongkom.titlesongkom}}</p>
+              </nav>
+            </a>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    
+</div>
